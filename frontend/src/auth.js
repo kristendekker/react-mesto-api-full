@@ -1,6 +1,6 @@
 import { setToken } from "./utils/token";
 
-export const BASE_URL = 'https://domaindekker.students.nomoredomains.rocks';
+export const BASE_URL = 'https://domaindekker.students.nomoredomains.rocks/';
 
 export const register = (email, password) => {
     return fetch(`${BASE_URL}/signup`, {
