@@ -58,6 +58,7 @@ const App = () => {
 
     React.useEffect(() => {
         tokenCheck();
+        // eslint-disable-next-line
     }, []);
 
     const onLogin = (email, password) => {

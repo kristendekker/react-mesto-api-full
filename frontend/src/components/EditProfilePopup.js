@@ -30,6 +30,7 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
         });
         setIsValid(fieldsEnumeration(true));
         setValidationMessage(fieldsEnumeration(''));
+        // eslint-disable-next-line
     }, [currentUser, isOpen, setInputValue, setIsValid, setValidationMessage]);
 
     return (

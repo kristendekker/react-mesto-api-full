@@ -13,6 +13,7 @@ const Popup = ({ name, isOpen, onClose, children }) => {
         return () => {
             document.removeEventListener("keydown", handleEscapeClose, false);
         };
+        // eslint-disable-next-line
     }, [isOpen]);
 
     const handleOverlayClose = (event) => {

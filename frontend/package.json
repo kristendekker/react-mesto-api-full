@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server_deploy": "npm run build && scp -r ./build/* praktikum@130.193.39.67:/home/praktikum/react-mesto-api-full/frontend/",
+    "server_deploy": "npm run build && scp -r ./build/* praktikum@130.193.39.67:/home/praktikum/news-frontend/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

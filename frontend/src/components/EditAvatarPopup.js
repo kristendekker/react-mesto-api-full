@@ -25,6 +25,7 @@ const EditAvatarPopup = ({ isOpen, onClose, onUpdateAvatar, isLoading }) => {
         setInputValue(fieldsEnumeration(''));
         setIsValid(fieldsEnumeration(false));
         setValidationMessage(fieldsEnumeration(''));
+        // eslint-disable-next-line
     }, [isOpen, setInputValue, setIsValid, setValidationMessage]);
 
     return (

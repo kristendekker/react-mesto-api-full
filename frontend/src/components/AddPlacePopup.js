@@ -24,6 +24,7 @@ const AddPlacePopup = ({ isOpen, onClose, onAddPlace, isLoading }) => {
         setInputValue(fieldsEnumeration(''));
         setIsValid(fieldsEnumeration(false));
         setValidationMessage(fieldsEnumeration(''));
+        // eslint-disable-next-line
     }, [isOpen, setInputValue, setIsValid, setValidationMessage]);
 
     return (

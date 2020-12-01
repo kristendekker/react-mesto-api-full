@@ -23,6 +23,7 @@ const FormContent = ({ handleSubmit, formName, submitValue }) => {
         setInputValue(fieldsEnumeration(''));
         setIsValid(fieldsEnumeration(false));
         setValidationMessage(fieldsEnumeration(''));
+        // eslint-disable-next-line
     }, [setInputValue, setIsValid, setValidationMessage]);
 
     return (
