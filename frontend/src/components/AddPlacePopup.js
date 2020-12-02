@@ -32,12 +32,12 @@ const AddPlacePopup = ({ isOpen, onClose, onAddPlace, isLoading }) => {
             name="add"
             isOpen={isOpen}
             onClose={onClose}>
-            <h2 className="popup__title">Новое место</h2>
-            <form className={'popup__container popup__container_type_add'}
+            <form className={'popup__container_type_add'}
                 action="#"
                 name="add"
                 onSubmit={handleSubmit}
                 noValidate>
+            <h2 className="popup__title">Новое место</h2>
                 <div className="popup__cover">
                     <label className="popup__control">
                         <input

@@ -33,7 +33,7 @@ const EditAvatarPopup = ({ isOpen, onClose, onUpdateAvatar, isLoading }) => {
             isOpen={isOpen}
             onClose={onClose}>
             <h2 className="popup__title">Обновить аватар</h2>
-            <form className={'popup__container popup__container_type_avatar'}
+            <form className={'popup__container_type_avatar'}
                 action="#"
                 name="avatar"
                 onSubmit={handleSubmit}

@@ -36,9 +36,10 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
     return (
         <Popup name="edit"
             isOpen={isOpen}
-            onClose={onClose}>
+            onClose={onClose}
+            >
             <h2 className="popup__title">Редактировать профиль</h2>
-            <form className={'popup__container popup__container_type_edit'}
+            <form className={'popup__container_type_edit'}
                 action="#"
                 name="edit"
                 onSubmit={handleSubmit}

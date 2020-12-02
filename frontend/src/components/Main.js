@@ -7,17 +7,15 @@ const Main = ({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, onCardLike
     return (
         <main className="content page__content">
             <section className="profile">
-                    <div className="profile__avatar" onClick={onEditAvatar}
-                        style={{ backgroundImage: `url(${currentUser.avatar})` }} />
-                    <div className="profile__info">
-                        <div className="profile__info">
-                            <h1 className="profile__name">{currentUser.name}</h1>
-                            <button className="profile__buttton-edit" type="button"
-                                onClick={onEditProfile} />
-                        </div>
-                        <p className="profile__profession">{currentUser.about}</p>
-                    </div>
-                <button className="profile__button_add" type="button" onClick={onAddPlace} />
+                <div className="profile__avatar-button" onClick={onEditAvatar}
+                    style={{ backgroundImage: `url(${currentUser.avatar})` }} />
+                <div className="profile__info">
+                    <h1 className="profile__name">{currentUser.name}</h1>
+                    <button className="profile__button-edit" type="button"
+                        onClick={onEditProfile} />
+                    <p className="profile__profession">{currentUser.about}</p>
+                </div>
+                <button className="profile__button-add" type="button" onClick={onAddPlace} />
             </section>
 
             <section className="elements">
