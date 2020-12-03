@@ -127,8 +127,11 @@ class Api {
     }
 }
 
-const api = new Api({
-    baseUrl: 'https://api.domaindekker.students.nomoredomains.rocks/',
+const api = new Api({ 
+    baseUrl: process.env.NODE_ENV === 'production'
+    ? 'https://api.domaindekker.students.nomoredomains.rocks/'
+    : 'http://localhost:3000/',
+
     headers: {
         'Content-Type': 'application/json',
     }
