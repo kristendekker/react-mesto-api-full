@@ -19,7 +19,7 @@ router.patch('/me', celebrate({
 }), updateUser);
 router.patch('/me/avatar', celebrate({
   body: Joi.object().keys({
-    avatar: Joi.string().default('https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png'),
+    avatar: Joi.string().required().pattern(/https?:\/\/(www\.)?[-./a-zA-Z0-9]+\.[-./a-zA-Z0-9]+#?/),
   }),
 }), updateAvatarUser);
 

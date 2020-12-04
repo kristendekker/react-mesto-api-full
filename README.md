@@ -4,6 +4,6 @@
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
 Публичный IP-адрес сервера:130.193.39.67
-Домен приложения:http://domaindekker.students.nomoredomains.rocks/
-API:http://api.domaindekker.students.nomoredomains.rocks/
+Домен приложения:https://domaindekker.students.nomoredomains.rocks/
+API:https://api.domaindekker.students.nomoredomains.rocks/
 
