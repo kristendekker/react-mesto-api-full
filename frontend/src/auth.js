@@ -1,7 +1,7 @@
 import { setToken } from "./utils/token";
 
 export const BASE_URL = process.env.NODE_ENV === 'production'
-? 'https://api.domaindekker.students.nomoredomains.rocks'
+? 'https://api.krisdekker.students.nomoredomains.rocks'
 : 'http://localhost:3000';
 
 export const register = (email, password) => {

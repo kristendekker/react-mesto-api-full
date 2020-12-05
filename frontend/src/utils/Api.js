@@ -129,7 +129,7 @@ class Api {
 
 const api = new Api({ 
     baseUrl: process.env.NODE_ENV === 'production'
-    ? 'https://api.domaindekker.students.nomoredomains.rocks/'
+    ? 'https://api.krisdekker.students.nomoredomains.rocks/'
     : 'http://localhost:3000/',
 
     headers: {
