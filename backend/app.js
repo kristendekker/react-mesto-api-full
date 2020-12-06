@@ -8,6 +8,7 @@ const cardsRoutes = require('./routes/cards.js');
 const { login, createUser } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const NotFoundError = require('./errors/not-found-err.js');
 require('dotenv').config();
 
 const app = express();
@@ -60,6 +61,10 @@ app.use('/cards', auth, cardsRoutes);
 app.use(errorLogger);
 
 app.use(errors());
+
+app.use('*', () => {
+  throw new NotFoundError();
+});
 
 app.use((err, req, res, next) => {
   const { statusCode = 500, message } = err;
